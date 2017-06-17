@@ -1,0 +1,1 @@
+<input type="text" name="portfolio_footer_message" value="<?php echo $portfolioFooterMessage; ?>" placeholder="Portfolio Footer Message" size="45"> 

@@ -1,0 +1,1 @@
+<input type="text" name="portfolio_footer_phone" value="<?php echo $portfolioFooterPhone; ?>" placeholder="Portfolio Footer Phone"> 

@@ -1,0 +1,17 @@
+/*
+	Theme Name: LandResume
+	Theme URI: http://www.josemolinaresume.com/jmtemplates/landresume
+	Author: Jose Molina
+	Author URI: http://www.josemolinaresume.com
+	Description: This is a simple land page wordpress theme. It's based on my personal Resume website www.josemolina.com. Please feel free to change the data, code or whatever you want in order to addapt it for yourself. 
+	Version: 1.0.0
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Text Domain: landresume
+	Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-menu, editor-style, featured-images
+
+	This theme, like WordPress, is licensed under the GPL.
+	Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url('assest/css/global.css');

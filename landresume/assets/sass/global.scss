@@ -1,0 +1,576 @@
+@import 'fonts';
+@import 'colors';
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x:hidden;
+    	position:relative;
+}
+
+body {
+	font-family: $font-stack;
+	min-width: 320px;
+	line-height: 1.4em;
+	color: $primary-color;
+	font-size: 15px;
+	font-weight: 400;
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+}
+
+.white,
+.white-bg {
+	color: $white;
+}
+
+.gray{
+	color: $gray;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+#adminmenuwrap {
+	width: 200px !important;
+}
+
+.fa-stack3x {
+    display: inline-block;
+    height: 3em;
+    line-height: 3em;
+    position: relative;
+    vertical-align: middle;
+    width: 3em;
+}
+
+.fa-stack-3x {
+    font-size: 3em;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.btn{
+	cursor: pointer;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.sub_titles{
+	font-family: $font-alterantive;
+	letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.icon-round {
+	background: $yellow;
+	box-shadow: 0 0 0 4px $yellow-dark;
+	width: 30px;
+	height: 30px;
+	font-size: 0.9em;
+	color: $white;
+	border-radius: 100%;
+    padding: 4px 0px 5px 7px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.modal-content {
+    height: 100%;
+    border-bottom: 0;
+}
+
+#portfolioModal{
+	table.details{
+		font-size: 12px;
+	}
+	footer{
+		height: 20px;
+		background-color: $gray;
+		color: $white;
+		display: inline-table;
+		padding: 38px 20px;
+	}
+}
+
+.content-picture {
+	animation-delay: 1s;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.modal-full {
+	padding: 0;
+	.modal-dialog {
+	    margin: 0;
+	    max-width: 100%;
+	    .modal-header{
+	    	border-bottom: 0;
+	    }
+	    .title{
+    	 	font-family: $font-alterantive;
+		    font-size: 30px;
+		    letter-spacing: 3px;
+		    text-transform: uppercase;
+	    }
+	}
+}
+
+#menuHome{
+    	animation-duration: 1.2s;
+    	position: absolute;
+    	z-index: 50;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+	.logo {
+		.jose,
+		.molina {
+			font-size: 27px;
+			padding: 1px 6px;
+			color: $white;
+			font-weight: 700;
+			letter-spacing: 4px;
+			text-decoration: none;
+			font-family: $font-alterantive;
+		}
+
+		.jose {
+			background-color: $orange;
+			border-radius: 15px 0 22px 15px;
+		   	padding: 0 11px;
+		}
+
+		.molina {
+			color: $primary-color;
+		}
+	}
+	#navbarHeader {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		@media only screen and (max-width: 992px) {
+			width: 100%;
+		}
+		li {
+			padding: 28px 16px;
+			@media only screen and (max-width: 992px) {
+				text-align: center;
+				padding: 2px 16px;
+			}
+			&.active{
+				a.nav-link {
+					color: $orange;
+				}
+			}
+			a.nav-link {
+				font-size: 24px;
+				color: $white;
+				text-transform: uppercase;
+				font-family: $font-alterantive;
+				font-weight: 400;
+				letter-spacing: 1px;
+				text-shadow: 2px 3px 1px rgba(0,0,0,0.15);
+				&:hover{
+					color: $orange;
+				}
+			}
+		}
+	}
+	&.bg-faded{
+		background-color: rgba(255, 255, 255, 0.85);
+		box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+		#navbarHeader {
+			li {
+				a.nav-link:not(.selected) {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}
+.navbar-light .navbar-toggler{
+	background-color: white;
+	cursor: pointer;
+	top: 20px;
+	z-index: 200;
+}
+@media only screen and (max-width: 992px) {
+	.navbar-nav{
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+}
+
+.btn-download{
+	float: left;
+	width: 100%;
+	margin: 14px 0;
+}
+
+.page {
+	float:left;
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.content{
+	background-color: rgba(255, 255, 255, 0.99);
+	border-top: 83px solid transparent;
+ 	float: right;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 60px 30px 30px;
+	.title{
+		font-family: $font-alterantive;
+		font-size: 30px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		&::after{
+ 			background-color: rgba(246, 170, 0, 0.95);
+			border: 1px solid $orange;
+			border-radius: 15px 0 22px 15px;
+			content: "";
+			display: block;
+			filter: drop-shadow(2px 1px 3px rgba(0, 0, 0, 0.5));
+			height: 16px;
+			margin-top: 5px;
+			width: 164px;
+		}
+	}
+	p{
+		line-height: 26px;
+		margin-top: 25px;
+	}
+	.tags{
+		color: $gray;
+		&.bg-education{
+			position: relative;
+			overflow: hidden;
+			&::after{
+				width: 30px;
+				height: 30px;
+				font-size: 11em;
+				transform: rotate(10deg);
+				color: rgba(148,148,148,0.3);
+				content: "";
+				position: absolute;
+				top: 36px;
+				right: 170px;
+				content: "\f19d";
+			    font-family: $font-icons;
+			}
+		}
+		a {
+			&.top{
+				position: absolute;
+			    right: 0;
+			    top: -7px;
+			    z-index: 100;
+			}
+		}
+		.icon{
+			font-weight: 700;
+			font-size: 14px;
+			.fa{
+				margin-right: 4px;
+			}
+		}
+	}
+	.card{
+		overflow: hidden;
+		.date{
+			font-weight: 700;
+			padding: 0.6rem 1.25rem;
+			&::after{
+				width: 30px;
+				height: 30px;
+				font-size: 3em;
+				transform: rotate(10deg);
+				color: rgba(148,148,148,0.3);
+				content: "";
+				position: absolute;
+				top: 9px;
+				right: 26px;
+				content: "\f073";
+			    font-family: $font-icons;
+			}
+		}
+		&.detail{
+			overflow: visible;
+			&::before {
+			    background-color: white;
+			    content: "";
+			    height: 20px;
+			    left: 32px;
+			    position: absolute;
+			    top: -19px;
+			    width: 6px;
+			}
+			&.connect{
+				&::after{
+					filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.3));
+					background-color: transparent;
+				    border: 4px solid $white;
+				    border-left: 0;
+				    bottom: -66px;
+				    content: "";
+				    height: 80px;
+				    position: absolute;
+				    right: -19px;
+				    width: 19px;
+				    z-index: 50;
+				}
+			}
+			small{
+				font-size: 75%;
+				float: left;
+				width: 100%;
+			}
+		}
+	}
+}
+
+// HOME SECTION
+.home{
+	#info {
+		left: 0;
+		margin: auto;
+		position: absolute;
+		right: 0;
+		top: 22%;
+		z-index: 10;
+		color: $white;
+		.title{
+			font-size: 75px;
+			line-height: 75px;
+			text-align: center;
+			animation-duration: 1s;
+			span{
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
+		.title_sup {
+			font-size: 30px;
+			line-height: 36px;
+			text-align: center;
+			animation-duration: 2.2s;
+			i{
+				font-size: 24px;
+			}
+		}
+		.icons{
+			display: table;
+			li {
+				position: relative;
+			animation-duration: 1.2s;
+
+				.bg-circle{
+					background: rgba(255, 255, 255, 0.15) none repeat scroll 0 0;
+					border-radius: 50%;
+					display: block;
+					width: 4em;
+					height: 4em;
+					overflow: hidden;
+					.fa{
+					 	display: block;
+						height: 100%;
+						margin: 0 auto;
+						padding-top: 0.5em;
+						text-align: center;
+						transition: all 0.4s ease 0s;
+						vertical-align: bottom;
+						transition: all 0.4s;
+					}
+					&:hover{
+						background: rgba(1, 76, 140, 0.55) none repeat scroll 0 0;
+						.fa.fa-inverse{
+							transform: translateY(-46px);
+							transition: all 0.4s;
+  							transition-timing: ease-in-out;
+						}
+						.fa.mt-3{
+							transform: translateY(-78px);
+							transition: all 0.4s;
+  							transition-timing: ease-in-out;
+  							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
+	p.bubble {
+		animation-delay: 1.2s;
+		transition: all 0.9s;
+		transition-timing: ease-in-out;
+		background-color: rgba(246, 170, 0, 0.95);
+		border: 1px solid $orange;
+		border-radius: 15px 0 22px 15px;
+		content: "";
+		display: block;
+		height: 48px;
+		position: absolute;
+		bottom: 0;
+		width: 164px;
+		filter: drop-shadow(4px 2px 8px rgba(0, 0, 0, 0.5));
+		letter-spacing: 0.5px;
+		.fa{
+			transition: all 0.9s;
+			color: rgba(121, 121, 121, 0.4);
+			padding-top: 4px;
+		}
+		&.first{
+			transform: rotate(-4deg);
+			z-index: 10;
+			right: 190px;
+			&:hover{
+				transform: rotate(0deg);
+				transform: scale(1.2);
+				z-index: 30;
+				.fa{
+					transition: all 0.9s;
+					color: $white;
+				}
+			}
+		}
+		&.second{
+			transform: rotate(4deg);
+			z-index: 20;
+			right: 30px;
+			&:hover{
+				transform: rotate(0deg);
+				transform: scale(1.2);
+				.fa{
+					transition: all 0.9s;
+					color: $white;
+				}
+			}
+		}
+		a:hover{
+			color: $white;
+		}
+	}
+}
+
+//MY SKILLS PAGE
+.skills{
+	.content{
+		&.circles{
+			h5 {
+				float: left;
+				width: 100%;
+			}
+			.card{
+			    float: left;
+			    width: 33%;
+			    height: 198px;
+				border: 0;
+				background-color: transparent;
+				.card-header{
+					border: 0;
+					background-color: transparent;
+				}
+				.card-title{
+					font-size: 0.9rem;
+					text-align: center;
+					position: relative;
+					span {
+					    width: 100%;
+					    margin-top: 10px;
+					    padding-top: 2px;
+					    display: block;
+					    color: red;
+					}
+				}
+			}
+		}
+	}
+}
+
+//PORTFOLIO PAGE
+.portfolio{
+	.content{
+		.portfolio-filters{
+			border: 0;
+			text-transform: uppercase;
+			a{
+				color: $white;
+				background-color: $gray;
+				font-size: 13px;
+				&.active{
+					background-color: $orange;
+					color: $white;
+					border-color: transparent;
+				}
+			}
+		}
+		.portfolio-grid{
+			float: left;
+		    margin: 10px 0;
+		    width: 100%;
+			li{
+			    width: 50%;
+			    max-height: 122px;
+			    float: left;
+			    display: block;
+			    position: relative;
+			    overflow: hidden;
+			    cursor: pointer;
+			    @media only screen and (max-width: 768px) {
+					width: 50%;
+					max-height: 204px;
+				}
+		    	.img-fluid{
+					transition: all 0.4s ease 0s;
+		    	}
+		    	&:hover{
+		    		.img-fluid{
+			    		transform: scale(1.2);
+			    	}
+			    }
+			    .shadow {
+				    background-color: rgba(46, 54, 57, 0.65);
+				    display: none;
+				    height: 100%;
+				    left: 0;
+				    position: absolute;
+				    top: 0;
+				    width: 100%;
+				    z-index: 20;
+				    position: absolute;
+				    p{
+				    	padding:5px 30px;
+				    	margin: 0;
+				    	color: $white;
+				    	width: 100%;
+				    	background-color: rgba(246, 170, 0, 0.8);
+				    	left: 0;
+				    	bottom: 0;
+				    	position: absolute;
+				    	&::before{
+				    		width: 20px;
+				    		height: 20px;
+				    		font-family: $font-icons;
+							content: "\f002";
+						    left: 10px;
+						    position: absolute;
+						}
+				    }
+				}
+			}
+		}
+	}
+}

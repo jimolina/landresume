@@ -1,0 +1,9 @@
+.fade {
+	opacity: 1;
+}
+#titlediv #title-prompt-text{
+	padding: 3px 10px;
+}
+#jmAwesomePluginContainer label{
+	font-weight: bold;
+}
