@@ -1,4 +1,6 @@
 # Landresume
+![Home](http://josemolinaresume.com/jmtemplates/landresume/home.png)
+
 A WordPress Theme to use as LandPage Resume.
 
 After I created my own personal Resume Online: [www.josemolinaresume.com](http://www.josemolinaresume.com) using #Html, #JQuery, #Bootrstrap4 and #FontAwesome, I decide create a WP custom theme with the same design and share with everybody that need it.
@@ -16,3 +18,14 @@ After I created my own personal Resume Online: [www.josemolinaresume.com](http:/
 
 **Landresume** uses a subset of [Bootstrap 4 Alpha](https://github.com/twbs/bootstrap) CSS
 framework by default.
+
+## Documentation
+
+This is a working process: [https://github.com/jimolina/landresume/wiki](https://github.com/jimolina/landresume/wiki)
+
+## TODO
+
+1. Activate the Post Type on the Plugin jm-social-media-font-awesome.
+2. Add the code in the General Content Template to show the FA Icons type ASIDE.
+3. Add a slider component in the Portfolio Detail page, in order to show more than 1 image as example for each project.
+4. Add a way to assign dynamically the Icons for each Post Category.
