@@ -573,3 +573,123 @@ a, a:hover {
           content: "\f002";
           left: 10px;
           position: absolute; }
+
+/* WP REQUIRED Styles */
+/* =WordPress Core
+-------------------------------------------------------------- */
+/* line 581, ../sass/global.scss */
+.gallery-caption {
+  border: 0 none; }
+
+/* line 585, ../sass/global.scss */
+.bypostauthor {
+  border: 0 none; }
+
+/* line 589, ../sass/global.scss */
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+/* line 593, ../sass/global.scss */
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+/* line 599, ../sass/global.scss */
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+/* line 604, ../sass/global.scss */
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+/* line 609, ../sass/global.scss */
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+/* line 614, ../sass/global.scss */
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+/* line 618, ../sass/global.scss */
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+/* line 623, ../sass/global.scss */
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 629, ../sass/global.scss */
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+/* line 637, ../sass/global.scss */
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+/* line 641, ../sass/global.scss */
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+/* line 645, ../sass/global.scss */
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+/* line 649, ../sass/global.scss */
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+/* line 658, ../sass/global.scss */
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+/* Text meant only for screen readers. */
+/* line 666, ../sass/global.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
+/* line 675, ../sass/global.scss */
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
