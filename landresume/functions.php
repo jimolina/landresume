@@ -11,7 +11,7 @@ function landresume_script_enqueue() {
 	wp_enqueue_style( 'animate.css', get_template_directory_uri() . '/assets/css/vendor/animate.css', [], '3.5.1', $media );
 	wp_enqueue_style( 'circle.css', get_template_directory_uri() . '/assets/css/vendor/circle.css', [], '1.0', $media );
 	wp_enqueue_style( 'font-awesome.min.css', get_template_directory_uri() . '/assets/css/vendor/font-awesome.min.css', [], '4.7.0', $media );
-	wp_enqueue_style( 'global.css', get_template_directory_uri() . '/assets/css/global.css', [], '1.0.2', $media );
+	wp_enqueue_style( 'global.css', get_template_directory_uri() . '/assets/css/global.css', [], '1.0.2.1', $media );
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'tether.min.js', get_template_directory_uri() . '/assets/js/vendor/tether.min.js', [], '1.3.3', true );
@@ -30,6 +30,7 @@ function landresume_theme_setup() {
     add_theme_support('menus');
     add_theme_support('post-formats', ['aside']);
     add_theme_support('post-thumbnails');
+    add_theme_support('title-tag');
 
 	register_nav_menu( 'primary', 'Primary Header Menu' );
 
