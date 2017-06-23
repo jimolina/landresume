@@ -47,7 +47,7 @@
 
     </div>
 </div>
-<!-- Comments Avatar -->
+<!-- Comments Avatar, Page Pagination, Comments Pagination -->
 <!-- This element is not really used in the Theme. But you are free to activate it just removing the class "hidden-xl-down" below -->
 <ol class="hidden-xl-down">
     <?php
@@ -60,8 +60,10 @@
         //Display the list of comments
         wp_list_comments(array(
             'per_page' => 1, //Allow comment pagination
-            'reverse_top_level' => false //Show the oldest comments at the top of the list
-            'avatar_size' => 1 //Show the oldest comments at the top of the list
+            'reverse_top_level' => false, //Show the oldest comments at the top of the list
+            'avatar_size' => 1 //Show the avatar
         ), $comments);
     ?>
+    <?php the_posts_pagination( array( 'mid_size' => 2 ) ); ?>
+    <?php the_comments_pagination( array( 'mid_size' => 2 ) ); ?>
 </ol>
