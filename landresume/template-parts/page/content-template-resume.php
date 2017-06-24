@@ -112,3 +112,6 @@
 
     </div>
 </div>
+<!-- Tags -->
+<!-- This element is not really used in the Theme. But you are free to activate it just removing the class "hidden-xl-down" below -->
+<p class="hidden-xl-down tag"><?php the_tags(); ?></p>

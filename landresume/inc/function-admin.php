@@ -17,7 +17,9 @@ function landresume_admin_script_enqueue() {
 
     global $pagenow;
 
-    if ( 'admin.php' == $pagenow ) {
+    $screen = get_current_screen();
+
+    if ( ( 'themes.php' == $pagenow ) && ( 'appearance_page_landresume_jm' == $screen->base ) ) {
 
         //Load CSS files
         wp_register_style( 'bootstrap.min.css', get_template_directory_uri() . '/assets/css/vendor/bootstrap.min.css', [], '4.0.0' );
@@ -54,12 +56,8 @@ add_action( 'admin_enqueue_scripts', 'landresume_admin_script_enqueue' );
 function landresume_add_admin_page()
 {
 
-    //Generate LandResume Admin Page
-    add_menu_page( 'LandResume Theme Options', 'LandResume Options', 'manage_options', 'landresume_jm', 'landresume_theme_create_page', get_template_directory_uri() . '/assets/images/favicon.png?ver=1.0', 110 );
-
-    //Generate LandResume Admin Sub Pages
-    add_submenu_page( 'landresume_jm', 'LandResume Theme Options', 'General Info', 'manage_options', 'landresume_jm', 'landresume_theme_create_page' );
-    // add_submenu_page( 'landresume_jm', 'LandResume Templates Options', 'Templates', 'manage_options', 'landresume_jm_template', 'landresume_theme_template_page' );
+    $icon = get_template_directory_uri().'/landresume/images/favicon.png?ver=1.0';
+    add_theme_page('LandResume Theme Options', 'LandResume Options' ,'manage_options', 'landresume_jm' , 'landresume_theme_create_page', $icon);
 
     //Activate LandResume Custom Settings
     add_action( 'admin_init', 'landresume_custom_settings' );

@@ -2,7 +2,7 @@
     <div class="col-sm-12 content">
         <h1 class="title"><?php echo $page->post_title; ?></h1>
         <h4 class="mt-5">
-            <?php echo $page->post_content; ?>
+            <?php echo $page->post_content; ?>            
         </h4>
         <!-- Nav tabs -->
         <ul class="nav nav-tabs portfolio-filters justify-content-center mt-5" role="tablist">
@@ -89,3 +89,7 @@
     </div>
 </div>
 <?php require get_template_directory() . '/inc/templates/frontend/portfolio-detail.php'; ?>
+
+<!-- Tags -->
+<!-- This element is not really used in the Theme. But you are free to activate it just removing the class "hidden-xl-down" below -->
+<p class="hidden-xl-down tag"><?php the_tags(); ?></p>
