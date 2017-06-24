@@ -1,11 +1,11 @@
 <!doctype html>
-<html>
+<html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="utf-8"></meta>
 		<?php wp_head(); ?>
 	</head>
 
-	<body>
+	<body <?php body_class( '' ); ?>>
 		<div class="wrapper">
 			<nav id="menuHome" class="navbar navbar-toggleable-md navbar-light px-4 pt-0 pb-4">
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">

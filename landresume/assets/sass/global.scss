@@ -6,7 +6,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	overflow-x:hidden;
-    	position:relative;
+	position:relative;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 	font-weight: 400;
 	height: 100%;
 	overflow: hidden;
-	width: 100%;
+	width: 100% !important;
 }
 
 .white,

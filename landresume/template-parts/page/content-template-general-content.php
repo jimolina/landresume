@@ -33,7 +33,7 @@
                     $postAwesomeContent = get_post_meta($post->ID, 'jm_awesome_content', true);
 
             ?>
-                    <li class="list-group-item no-gutters">
+                    <li class="list-group-item no-gutters <?php post_class(); ?>">
                         <div class="col-4 icon"><i class="fa <?php echo $postAwesomeIcon;?> fa-2x"></i><?php echo $post->post_title; ?></div>
                         <div class="col-8 text-right"><?php echo $postAwesomeContent; ?></div>
                     </li>
@@ -47,10 +47,13 @@
 
     </div>
 </div>
-<!-- Comments Avatar, Page Pagination, Comments Pagination -->
+<!-- Comments Avatar, Page Pagination, Comments Pagination, Comments Template, Post Format, Comment Form -->
 <!-- This element is not really used in the Theme. But you are free to activate it just removing the class "hidden-xl-down" below -->
-<ol class="hidden-xl-down">
+<div class="hidden-xl-down">
     <?php
+        $format = get_post_format();
+        get_template_part( 'format', $format );
+
         //Gather comments for a specific page/post 
         $comments = get_comments(array(
             'post_id' => $page->ID,
@@ -66,4 +69,8 @@
     ?>
     <?php the_posts_pagination( array( 'mid_size' => 2 ) ); ?>
     <?php the_comments_pagination( array( 'mid_size' => 2 ) ); ?>
-</ol>
+    <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
+    <?php wp_link_pages( $args ); ?>
+    <?php comments_template(); ?>
+    <?php comment_form(); ?>
+</div>
