@@ -31,12 +31,12 @@ jQuery(document).ready(function($){
 
   animationHome();
 
-  var sildeNum = $( '.page' ).length,
+  var sildeNum = $( 'div.page' ).length,
       wrapperWidth = 100 * sildeNum,
       slideWidth = 100/sildeNum;
 
   $( '.wrapper' ).width(wrapperWidth + '%'); 
-  $( '.page' ).width(slideWidth + '%');
+  $( 'div.page' ).width(slideWidth + '%');
 
   $( 'a.scrollitem' ).click(function() {
     var actualPage = $( 'a.scrollitem.selected' ).attr( 'href' );
@@ -46,7 +46,7 @@ jQuery(document).ready(function($){
     $( 'a.scrollitem' ).removeClass( 'selected' );
     $( this ).addClass( 'selected' );
 
-    var slideNumber = $( $( this ).attr( 'href' )).index( '.page' ),
+    var slideNumber = $( $( this ).attr( 'href' )).index( 'div.page' ),
         margin = slideNumber * -100 + '%';
     if ( (actualPage === '#home') && (slideNumber !== 0) ) {
       $( '#menuHome' ).addClass( 'animated fadeOutLeft' );
